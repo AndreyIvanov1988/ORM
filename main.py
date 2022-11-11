@@ -14,7 +14,7 @@ create_tables(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-with open('fixtures/tests_data.json', 'r') as fd:
+with open('tests_data.json', 'r') as fd:
     data = json.load(fd)
 
 for record in data:
